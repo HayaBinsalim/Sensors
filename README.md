@@ -3,7 +3,7 @@
 The work here was done practically on site and all the results were shown to the engineer responsible. Three sensors were used: a thermistor, an LDR, and an ultrasonic sensor. 
 #  Thermistor 
 A thermistor is a resistance thermometer or a resistor whose resistance depends on temperature. The change in resistance depends on the type of material used in the thermistor. 
-### Circuit 
+## Circuit 
 The components needed for this circuit are:
 - Arduino Uno
 - Breadboard and jumper wires
@@ -16,7 +16,7 @@ The thermistor and resistor are connected in series; the node between them is co
 ![image](https://github.com/user-attachments/assets/fdb2014b-8711-4429-a67f-7b74897614fc)
 
 
-### Arduino Code
+## Arduino Code
 The following code is uploaded to the Arduino using Arduino IDE. This is to program it to show the temperature the thermistor senses in three units. 
 ```
 #define RT0 10000
@@ -70,14 +70,14 @@ Serial.println("F"); delay(500);
 # LDR 
 The LDR, also known as a photoresistor, is a type of resistor that changes its resistance based on the amount of light that falls on it. 
 
-### Circuit 
+## Circuit 
 The connection between the LDR and the Arduino is shown in the figure below. It is the same connection as the thermistor. The node between the LDR and the resistor is connected to pin A0 in the Arduino. 
 The circuit diagram is shown below. 
 
 ![image](https://github.com/user-attachments/assets/08067213-f9c9-4465-98cf-391583d7d216)
 
 
-### Arduino Code
+## Arduino Code
 The following code is uploaded to the Arduino using Arduino IDE. This is to program it to show the LDR readings and decision between five light choices: dark, dim, light, bright, very bright.
 ```
 int ldrpin = 0;
@@ -114,7 +114,7 @@ Serial.print(ldreading);
 # Ultrasonic Sensor (and buzzer)
 An ultrasonic sensor is an instrument that measures the distance to an object using ultrasonic sound waves. It uses a transducer to send and receive ultrasonic pulses that give back information about an object’s proximity.
 
-### Circuit 
+## Circuit 
 The connection for this circuit is done as follows: 
 -	Sensor Trig to ~6
 -	Sensor Echo to ~5 
@@ -124,7 +124,7 @@ The connection for this circuit is done as follows:
  ![image](https://github.com/user-attachments/assets/5d355392-9aae-4406-80c0-86a9b652add3)
  
 
-### Arduino Code
+## Arduino Code
 The code below is uploaded to the Arduino using Arduino IDE. It programs the circuit to make the buzzers sound louder and faster when the ultrasonic sensor senses closer objects, and a slower sound when the sensor senses a farther object. 
 ```
 #define trigPin 6  
